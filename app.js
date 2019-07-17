@@ -52,12 +52,16 @@ router.get('/hyunjoo/10image', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/hyunjoo/10image.html'));
     //__dirname : It will resolve to your project folder.
     });
-router.get('/11button', function (req, res) {
+router.get('/hyunjoo/11button', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/hyunjoo/11button.html'));
     //__dirname : It will resolve to your project folder.
     });
 router.get('/hyunjoo/12carousel', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/hyunjoo/12carousel.html'));
+    //__dirname : It will resolve to your project folder.
+    });
+router.get('/hyunjoo/13try', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/hyunjoo/13try.html'));
     //__dirname : It will resolve to your project folder.
     });
 
