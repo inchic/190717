@@ -55,6 +55,10 @@ router.get('/11button', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/hyunjoo/11button.html'));
     //__dirname : It will resolve to your project folder.
     });
+router.get('/hyunjoo/12carousel', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/hyunjoo/12carousel.html'));
+    //__dirname : It will resolve to your project folder.
+    });
 
 
 // 인식
