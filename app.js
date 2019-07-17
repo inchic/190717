@@ -51,6 +51,10 @@ router.get('/10image', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/hyunjoo/10image.html'));
     //__dirname : It will resolve to your project folder.
     });
+router.get('/11button', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/hyunjoo/11button.html'));
+    //__dirname : It will resolve to your project folder.
+    });
 
 
 // 인식
