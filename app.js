@@ -132,7 +132,7 @@ router.get('/21try', function (req, res) {
     });
 router.get('/22try', function (req, res) {
     console.log(req.query);
-    res.send('Request parameters :'+req.query.sel1+','+req.query.sel2)
+    res.send('Request parameters :'+req.query.success+','+req.query.warning+','+req.query.error)
     });
 
 
