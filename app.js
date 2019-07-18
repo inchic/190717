@@ -95,6 +95,19 @@ router.get('/hyunjoo/20try', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/hyunjoo/20try.html'));
     //__dirname : It will resolve to your project folder.
     });
+router.get('/hyunjoo/21try', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/hyunjoo/21try.html'));
+    //__dirname : It will resolve to your project folder.
+    });
+router.get('/hyunjoo/22try', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/hyunjoo/22try.html'));
+    //__dirname : It will resolve to your project folder.
+    });
+router.get('/hyunjoo/24card', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/hyunjoo/24card.html'));
+    //__dirname : It will resolve to your project folder.
+    });
+
 
 //값 받아오기
 router.get('/17input', function (req, res) {
@@ -113,6 +126,15 @@ router.get('/20try', function (req, res) {
     console.log(req.query);
     res.send('Request parameters :'+req.query.email+','+req.query.password+','+req.query.check)
     });
+router.get('/21try', function (req, res) {
+    console.log(req.query);
+    res.send('Request parameters :'+req.query.sel1+','+req.query.sel2)
+    });
+router.get('/22try', function (req, res) {
+    console.log(req.query);
+    res.send('Request parameters :'+req.query.sel1+','+req.query.sel2)
+    });
+
 
 
 // 인식
