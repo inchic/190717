@@ -10,6 +10,15 @@ app.use(express.static('public'))
 const path = require('path');
 const router = express.Router();
 
+
+//index
+router.get('/', function (req, res) {
+    res.sendFile(path.join(__dirname + '/index.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+
+
 //현주
 router.get('/hyunjoo/01container', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/hyunjoo/01container.html'));
@@ -118,6 +127,14 @@ router.get('/inchic/15trymain', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/inchic/15trymain.html'));
     //__dirname : It will resolve to your project folder.
 });
+router.get('/inchic/17navbar', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/inchic/17navbar copy.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+
+
+
 
 app.use('/', router);
 
