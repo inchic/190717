@@ -17,8 +17,6 @@ router.get('/', function (req, res) {
     //__dirname : It will resolve to your project folder.
 });
 
-
-
 //현주
 router.get('/hyunjoo/01container', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/hyunjoo/01container.html'));
@@ -80,6 +78,40 @@ router.get('/hyunjoo/14dropdown', function (req, res) {
 router.get('/hyunjoo/15navbar', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/hyunjoo/15navbar.html'));
     //__dirname : It will resolve to your project folder.
+    });
+router.get('/hyunjoo/17input', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/hyunjoo/17input.html'));
+    //__dirname : It will resolve to your project folder.
+    });
+router.get('/hyunjoo/18input', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/hyunjoo/18input.html'));
+    //__dirname : It will resolve to your project folder.
+    });
+router.get('/hyunjoo/19try', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/hyunjoo/19try.html'));
+    //__dirname : It will resolve to your project folder.
+    });
+router.get('/hyunjoo/20try', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/hyunjoo/20try.html'));
+    //__dirname : It will resolve to your project folder.
+    });
+
+//값 받아오기
+router.get('/17input', function (req, res) {
+    console.log(req.query);
+    res.send('Request parameters :'+req.query.password+','+req.query.email+','+req.query.status+','+req.query.status.vehicle1)
+    });
+router.get('/18input', function (req, res) {
+    console.log(req.query);
+    res.send('Request parameters :'+req.query.username+','+req.query.clever)
+    });
+router.get('/19try', function (req, res) {
+    console.log(req.query);
+    res.send('Request parameters :'+req.query.email+','+req.query.password+','+req.query.info)
+    });
+router.get('/20try', function (req, res) {
+    console.log(req.query);
+    res.send('Request parameters :'+req.query.email+','+req.query.password+','+req.query.check)
     });
 
 
