@@ -68,6 +68,10 @@ router.get('/hyunjoo/14dropdown', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/hyunjoo/14dropdown.html'));
     //__dirname : It will resolve to your project folder.
     });
+router.get('/hyunjoo/15navbar', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/hyunjoo/15navbar.html'));
+    //__dirname : It will resolve to your project folder.
+    });
 
 
 // 인식
