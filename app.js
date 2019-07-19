@@ -107,6 +107,10 @@ router.get('/hyunjoo/24card', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/hyunjoo/24card.html'));
     //__dirname : It will resolve to your project folder.
     });
+router.get('/hyunjoo/25card', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/hyunjoo/25card.html'));
+    //__dirname : It will resolve to your project folder.
+    });
 
 
 //값 받아오기
