@@ -58,26 +58,27 @@ router.get('/hyunjoo/09table', function (req, res) {
 router.get('/hyunjoo/10image', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/hyunjoo/10image.html'));
     //__dirname : It will resolve to your project folder.
-    });
+});
 router.get('/hyunjoo/11button', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/hyunjoo/11button.html'));
     //__dirname : It will resolve to your project folder.
-    });
+});
 router.get('/hyunjoo/12carousel', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/hyunjoo/12carousel.html'));
     //__dirname : It will resolve to your project folder.
-    });
+});
 router.get('/hyunjoo/13try', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/hyunjoo/13try.html'));
     //__dirname : It will resolve to your project folder.
-    });
+});
 router.get('/hyunjoo/14dropdown', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/hyunjoo/14dropdown.html'));
     //__dirname : It will resolve to your project folder.
-    });
+});
 router.get('/hyunjoo/15navbar', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/hyunjoo/15navbar.html'));
     //__dirname : It will resolve to your project folder.
+
     });
 router.get('/hyunjoo/17input', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/hyunjoo/17input.html'));
@@ -141,6 +142,7 @@ router.get('/22try', function (req, res) {
 
 
 
+
 // 인식
 // 루트폴더: test_git
 router.get('/inchic/01container', function (req, res) {
@@ -193,7 +195,36 @@ router.get('/inchic/17navbar', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/inchic/17navbar copy.html'));
     //__dirname : It will resolve to your project folder.
 });
+router.get('/inchic/19form', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/inchic/19form.html'));
+    //__dirname : It will resolve to your project folder.
+});
+router.get('/inchic/19formc', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/inchic/19form copy.html'));
+    //__dirname : It will resolve to your project folder.
+});
+router.get('/inchic/20form', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/inchic/20form.html'));
+    //__dirname : It will resolve to your project folder.
+});
+router.get('/inchic/21tryform', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/inchic/21tryform.html'));
+    //__dirname : It will resolve to your project folder.
+});
 
+
+
+// 190718 form
+router.get('/detail1', function (req, res) {
+    console.log(req.query);
+    res.send('Request parameters : ' + req.query.email + ', ' + req.query.pw + ',' + req.query.status)
+    res.send('Request parameters : ' + req.query.email + ', ' + req.query.status)
+});
+
+router.get('/detail', function (req, res) {
+    console.log(req.query);
+    res.send('Request parameters : ' + req.query.email)
+});
 
 
 
@@ -201,4 +232,7 @@ router.get('/inchic/17navbar', function (req, res) {
 app.use('/', router);
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+
+
+
 
