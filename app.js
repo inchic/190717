@@ -78,9 +78,7 @@ router.get('/hyunjoo/14dropdown', function (req, res) {
 router.get('/hyunjoo/15navbar', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/hyunjoo/15navbar.html'));
     //__dirname : It will resolve to your project folder.
-<<<<<<< HEAD
-});
-=======
+
     });
 router.get('/hyunjoo/17input', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/hyunjoo/17input.html'));
@@ -138,7 +136,7 @@ router.get('/22try', function (req, res) {
     res.send('Request parameters :'+req.query.success+','+req.query.warning+','+req.query.error)
     });
 
->>>>>>> 4e97bc01694ab06d77f8306d7d22db3a2dc29305
+
 
 
 // 인식
